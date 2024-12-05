@@ -51,4 +51,9 @@ public class ServerActor extends Actor {
     public String getName() {
         return "Console";
     }
+
+    @Override
+    public boolean hasPermission(String permission) {
+        return true;
+    }
 }

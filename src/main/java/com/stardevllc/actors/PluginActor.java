@@ -51,4 +51,9 @@ public class PluginActor extends Actor {
     public String getName() {
         return plugin.getName();
     }
+
+    @Override
+    public boolean hasPermission(String permission) {
+        return true;
+    }
 }

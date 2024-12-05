@@ -40,6 +40,8 @@ public abstract class Actor {
     }
 
     public abstract String getName();
+    
+    public abstract boolean hasPermission(String permission);
 
     public boolean isPlayer() {
         return false;

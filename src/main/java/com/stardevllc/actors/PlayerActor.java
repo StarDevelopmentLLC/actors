@@ -30,6 +30,16 @@ public class PlayerActor extends Actor {
     }
 
     @Override
+    public boolean hasPermission(String permission) {
+        Player player = getPlayer();
+        if (player == null) {
+            return false;
+        }
+        
+        return player.hasPermission(permission);
+    }
+
+    @Override
     public boolean isPlayer() {
         return true;
     }
