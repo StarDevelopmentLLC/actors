@@ -42,6 +42,8 @@ public abstract class Actor {
     public abstract String getName();
     
     public abstract boolean hasPermission(String permission);
+    
+    public abstract String getConfigString();
 
     public boolean isPlayer() {
         return false;

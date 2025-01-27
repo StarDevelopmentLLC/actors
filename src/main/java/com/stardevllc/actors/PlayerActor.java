@@ -40,6 +40,11 @@ public class PlayerActor extends Actor {
     }
 
     @Override
+    public String getConfigString() {
+        return this.uniqueId.toString();
+    }
+
+    @Override
     public boolean isPlayer() {
         return true;
     }
