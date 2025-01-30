@@ -51,6 +51,10 @@ public class PlayerActor extends Actor {
 
     @Override
     public boolean equals(Object object) {
+        if (object == null) {
+            return false;
+        }
+        
         return switch (object) {
             case UUID uuid -> this.uniqueId.equals(uuid);
             case Player player -> this.uniqueId.equals(player.getUniqueId());
