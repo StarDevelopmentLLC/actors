@@ -1,0 +1,8 @@
+main: com.stardevllc.actors.plugin.ActorsPlugin
+version: ${version}
+api-version: 1.13
+name: StarActors
+author: Firestar311
+commands: 
+  actors:
+    description: "Management command for the actors"

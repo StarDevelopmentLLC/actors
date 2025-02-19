@@ -28,7 +28,7 @@ public abstract class Actor {
 
         COLOR_FUNCTION = colorFunction;
     }
-
+    
     public abstract boolean equals(Object object);
 
     public abstract int hashcode();
